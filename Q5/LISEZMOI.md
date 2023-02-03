@@ -24,6 +24,8 @@ Address table:
 
 Écrivez la requête SQL qui permet de sortir les données suivante:
 
+SELECT lastName, firstName,city,state FROM Person AS p INNER JOIN Adress AS a ON p.personId = a.personId
+
 ```
 +-----------+----------+---------------+----------+
 | firstName | lastName | city          | state    |

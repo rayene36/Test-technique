@@ -18,13 +18,14 @@ Exemple de grille réponse:
 
 Réponse:
 
-| URL                              | Request Body                              | Response                                           | Response Body                                                         |
-|----------------------------------|-------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------------|
-|                                  |                                           |                                                    |                                                                       |
-|                                  |                                           |                                                    |                                                                       |
-|                                  |                                           |                                                    |                                                                       |
-|                                  |                                           |                                                    |                                                                       |
-|                                  |                                           |                                                    |                                                                       |
-|                                  |                                           |                                                    |                                                                       |
-|                                  |                                           |                                                    |                                                                       |
+| URL             | Request Body                                                        | Response                              | Response Body                                               |
+|-----------------|---------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------------|
+| POST /register  | {nom : "nom", email : "email", password : "password", plan: "plan"} | 201 Created                           | {id : "id", nom : "nom", email : "email", plan: "plan"}     |
+| GET /client/:id | Empty                                                               | 200 OK                                | {id : "id", nom : "nom", email : "email",plan: "plan" }     |
+| PUT /plans/:id  | {plan: "new_plan" }                                                 | 200 OK Headers : Authorization: token | {id : "id", nom : "nom", email : "email",plan: "new_plan" } |
+|                 |                                                                     |                                       |                                                             |
+|                 |                                                                     |                                       |                                                             |
+|                 |                                                                     |                                       |                                                             |
+|                 |                                                                     |                                       |                                                             |
+|                 |                                                                     |                                       |                                                             |
 

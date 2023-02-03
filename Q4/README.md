@@ -16,6 +16,8 @@ const students = [
 
 Using javascript methods, give us the first and last names of students with at least a 60% examScore.
 
+
+
 ### B.
 
 Using javascript methods, give us the average grades of all students.

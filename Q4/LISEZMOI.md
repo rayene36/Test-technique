@@ -16,6 +16,16 @@ const students = [
 
 À l’aide des méthodes javascript, donnez-nous le prénom et le nom des étudiants ayant au moins la note de 60%.
 
+students.forEach(student =>{
+if (student.examScore >= 60){console.log( "Prenom: " + student.firstname + " Nom: " + student.lastname );}
+})
+
 ### B.
 
 À l’aide des méthodes javascript, donnez-nous la moyenne des notes de tous les étudiants.
+average = 0;
+students.forEach(student =>{
+average += student.examScore;
+})
+
+console.log("Moyenne: " + average/ students.length)
